@@ -1,23 +1,11 @@
-let primeiroNome = "Mario";
-let sobrenome = "";
-let apelido = "";
+const primeiroNome = "Mario";
+const sobrenome = "";
+const apelido = "";
 
-let nomeExibicao = apelido || (sobrenome && `${primeiroNome} ${sobrenome}`) || primeiroNome;
-
-console.log(nomeExibicao);
-
-primeiroNome = "Mario";
-sobrenome = "";
-apelido = "Bros";
-
-nomeExibicao = apelido || (sobrenome && `${primeiroNome} ${sobrenome}`) || primeiroNome;
-
-console.log(nomeExibicao);
-
-primeiroNome = "Mario";
-sobrenome = "Bros";
-apelido = "";
-
-nomeExibicao = apelido || (sobrenome ? `${primeiroNome} ${sobrenome}` : primeiroNome);
-
-console.log(nomeExibicao);
+if (apelido) {
+    console.log(apelido)
+} else if (sobrenome) {
+    console.log(primeiroNome + sobrenome)
+} else if (primeiroNome) {
+    console.log(primeiroNome)
+}
