@@ -1,17 +1,13 @@
-const idadeDoAluno1 = 16;
-const possuiResponsavel1 = false;
+const idadeDoaluno = 17;
+const possuiResponsavel = true;
 
-if (idadeDoAluno1 >= 18 || possuiResponsavel1) {
-    console.log("Rematrícula realizada com sucesso");
+
+if (idadeDoaluno >= 18) {
+    console.log("Rematrícula realizada com sucesso.")
+} else if (possuiResponsavel === true) {
+    console.log("Rematrícula realizada com sucesso.")
+} else if (idadeDoaluno < 18) {
+    console.log("Não é possível fazer a rematrícula,só sera possivel acompanhado de um responsavel")
 } else {
-    console.log("Não é possível fazer a rematrícula");
-}
-
-const idadeDoAluno2 = 18;
-const possuiResponsavel2 = false;
-
-if (idadeDoAluno2 >= 18 || possuiResponsavel2) {
-    console.log("Rematrícula realizada com sucesso");
-} else {
-    console.log("Não é possível fazer a rematrícula");
+    console.log("Não é possivel fazer a rematricula.")
 }
