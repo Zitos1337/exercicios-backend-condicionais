@@ -1,11 +1,7 @@
 const rendaMensalEmCentavos = 300000;
 const mesesDecorridos = 12;
 const totalJaPagoPeloAluno = 100000;
-
-//O valor da parcela desse mês é R$ 540 reais
 const parcelas = (18 / 100) * rendaMensalEmCentavos / 100;
-
-//if se acontecer dentro do () vai rodar oq ta dentro da chaves {}
 
 if (rendaMensalEmCentavos < 200000) {
     console.log("A sua renda mensal é menor que 2.000 entao nao paga facul")
