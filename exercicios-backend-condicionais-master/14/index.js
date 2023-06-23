@@ -1,4 +1,4 @@
-const quantidadeDeAguaIngerida = 3.1;
+const quantidadeDeAguaIngerida = 2;
 
 if (quantidadeDeAguaIngerida < 1.5) {
     console.log("Risco Alto - Você está ingerindo pouquissima água, beba mais água!")
