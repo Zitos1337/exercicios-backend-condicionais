@@ -1,8 +1,8 @@
 const valorDoProduto = 100000;
 const quantidadeDoParcelamento = 10;
-const valorParcelasPagas = 100;
-const valorPago = valorParcelasPagas + (quantidadeDoParcelamento - 1) * 100;
-const valorParcelasRestantes = valorDoProduto - valorPago;
-const mensagem = `Restam ${quantidadeDoParcelamento - 3} parcelas de R$100`;
+const valorPago = 300;
+const valorParcelaEmReais = (valorDoProduto / quantidadeDoParcelamento) / 100;
+const parcelasPagas = valorPago / valorParcelaEmReais;
 
-console.log(mensagem);
+
+console.log(`Restam ${quantidadeDoParcelamento - parcelasPagas} parcelas de R$ ${valorParcelaEmReais.toFixed(2)}`)
